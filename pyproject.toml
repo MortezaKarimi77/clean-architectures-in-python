@@ -10,6 +10,7 @@ dependencies = [
     "litestar[jwt,pydantic,standard]>=2.16.0",
     "mypy>=1.11",
     "pytest>=8.4.1",
+    "pytest-asyncio>=1.1.0",
     "pytest-mock>=3.14.1",
 ]
 
@@ -17,4 +18,5 @@ dependencies = [
 plugins = ['pydantic.mypy']
 
 [tool.pytest.ini_options]
-testpaths = ["tests", "integration"]
+testpaths = ["tests"]
+addopts = '-s'
